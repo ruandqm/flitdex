@@ -53,6 +53,21 @@ nav{
 }
 
 .content{
-  display: flex;
+    display: flex;
     width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
+
+.arrow >span {
+  color: #fff;
+}
+
+.photo > span {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
