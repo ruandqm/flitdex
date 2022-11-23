@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,29 +12,33 @@
 
 <body>
     <header>
-        <img class="logoClean" src="./images/logoClean.png" width="70" alt="Logo Flit">
+        <a href="./index.html"> <img class="logoClean" src="./images/logoClean.png" width="70" alt="Logo Flit"></a>
+
         <nav>
             <a class="navOption" href="./index.html">Home</a>
-            <a class="navOption" href="./david.html">Participantes</a>
+            <a class="navOption" href="./participantes/david/david.html">Participantes</a>
             <a class="navOption" href="./sobreNos.html">Sobre nós</a>
         </nav>
     </header>
     <section class="content">
-        <div class="arrow" id="leftArrow">
+        <div class="arrow" id="backArrow">
             <span class="material-symbols-outlined">
                 navigate_before
             </span>
         </div>
-        <div class="photo">
-            <img src="./images/ruan.jpg" alt="Ruan" width="350">
-            <span class="name"></span>
+        <div id="photo">
+            <a id="link" href="./participantes/david/david.html"><img id="image" src="./images/david.jpg" alt="Ruan"
+                    width="300"></a>
+            <span id="name">David</span>
         </div>
-        <div class="arrow" id="rightArrow">
+        <div class="arrow" id="nextArrow">
             <span class="material-symbols-outlined">
                 navigate_next
             </span>
         </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
