@@ -105,6 +105,7 @@ html {
 
   .status{
     grid-area: status;
+    padding: 10px;
   }
 
   .bio>h2, .bio>p{
@@ -124,9 +125,53 @@ html {
   }
 
   .edit{
-    margin: 2vh 1vw 1vh 20vw;
-  }
+    margin: 2vh 1vw;
+    float: right;
+}
 
   .common{
     margin: 2vh 1vw;
+  }
+
+  .bar{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 10vh 2vw;
+  }
+
+  .marker{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: #b7c406;
+    border-radius: 20px;
+    height: 12px;
+    width: 26px;
+  }
+
+  .status>div{
+    width: 40vw;
+  }
+  .status>div>span{
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  .status>h2{
+    color: white;
+    font-size: large;
+  }
+
+  .leftBar{
+    color: white;
+    float: left;
+  }
+
+  .rightBar{
+    color: white;
+    float: right;
   }
