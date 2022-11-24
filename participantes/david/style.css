@@ -1,9 +1,16 @@
+style.css
 /*CSS reset inicio*/
 
-*{margin: 0; padding: 0; box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
+
+
+/*CSS reset starts*/
+.css html {
   font-size: 16px;
 }
 
@@ -12,15 +19,16 @@ img {
   height: auto;
 }
 
-/*CSS reset fim*/
+/*CSS reset end*/
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #084167;
 }
 
+/* Header and NavBar*/
 header {
- 
+
   padding: 0.5em 1.5em 0.5em 1.5em;
   background-color: #042940;
   display: flex;
@@ -41,6 +49,7 @@ nav {
   margin: 1vh 1vh;
 }
 
+/*Content*/
 .content {
   display: flex;
   width: 100vw;
@@ -55,8 +64,20 @@ nav {
   cursor: pointer;
 }
 
-.photo>span {
+#image {
+  transition-duration: 1s;
+}
+
+#photo {
+  display: flex;
+  flex-direction: column;
+}
+
+#photo>span {
   color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 0.5em;
   margin: 0 auto;
   text-align: center;
 }
@@ -65,7 +86,7 @@ nav {
   background-color: #084167;
   display: grid;
   grid-template: "box1 box3" 1fr
-  "box2 box3" 1.5fr / 1fr 1fr;
+    "box2 box3" 1.5fr / 1fr 1fr;
   gap: 1em;
   height: 100vh;
   padding: 1em;
@@ -73,22 +94,56 @@ nav {
 }
 
 .box1 {
-  background-color: red;
+  background-color: #084167;
   display: flex;
+  border: 0.2vh solid red;
+  text-align: left;
 }
 
 .box2 {
-  background-color: red;
+  background-color: #084167;
+  border: 0.2vh solid red;
 }
 
 .box3 {
-  background-color: red;
+  background-color: #084167;
+  border: 0.2vh solid red;
+  padding: 2vw;
 
 }
-.lista{
+
+.lista {
   margin-left: 2em;
 }
-.foto{
+
+.foto {
   margin-right: 1em;
-  margin: 2em ;
+  margin: 2em;
+}
+
+.bar {
+  position: relative;
+  background-color: black;
+  width: 80%;
+  height: 1px;
+  border-radius: 10px;
+  margin-top: 5em;
+}
+
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 20px;
+  height: 12px;
+  width: 26px;
+  margin-left: 2vw;
+}
+
+
+.linha2 {
+  margin-left: 23vw;
+
 }
