@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleMyPage.css">
     <title>Jonatan</title>
 </head>
 
@@ -17,9 +17,71 @@
             <a class="navOption" href="../../sobreNos.html">Sobre nós</a>
         </nav>
     </header>
-    <section class="content">
+    <section class="gridContainer">
+        <section class="aboutMe me">
+            <div>
+                <img src="../../images/jonatan.jpg" alt="Minha foto" width="200">
+            </div>
+            <div>
+                <h2 class="textAboutMe">Jonatan</h2>
+                <span class="textAboutMe">jonatan.mim@hotmail.com</span>
+                <ul class="textAboutMe listDetail">
+                    <li>28 anos</li>
+                    <li>Desenvolvedor FullStack Jr</li>
+                    <li>Nova Santa Rita/RS</li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="aboutMe bio">
+            <h2>Jonatan</h2>
+            <p id="myBio">
+                Texto padrão.
+            </p>
+            <a href="../david/david.html"><button class="btn common">Anterior</button></a>
+            <a href="../marcos/marcos.html"><button class="btn common">Próximo</button></a>
+            <button class="btn edit" id="btnEdit">Editar</button>
+        </section>
+
+        <section class="aboutMe status">
+            <h2>Personalidade</h2>
+            <div class="bar">
+                <span class="leftBar">Introvertido</span>
+                <span class="rightBar">Extrovertido</span>
+                <div id="marker1" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">Analítico</span>
+                <span class="rightBar">Criativo</span>
+                <div id="marker2" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">JS</span>
+                <span class="rightBar">HTML</span>
+                <div id="marker3" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">Bagunçado</span>
+                <span class="rightBar">Organizado</span>
+                <div id="marker4" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">Individual</span>
+                <span class="rightBar">Trabalho em Equipe</span>
+                <div id="marker5" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">Soft Skills</span>
+                <span class="rightBar">Hard Skills</span>
+                <div id="marker6" class="marker"></div>
+            </div>
+            <div class="bar">
+                <span class="leftBar">Conservador</span>
+                <span class="rightBar">Tomador de Risco</span>
+                <div id="marker7" class="marker"></div>
+            </div>
+        </section>
     </section>
 </body>
-
+<script src="./scriptMyPage.js"></script>
 </html>

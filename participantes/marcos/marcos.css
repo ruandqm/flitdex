@@ -75,6 +75,7 @@ nav {
     grid-template-rows: 30vh 50vh;
     gap: 1vh;
     color: white;
+    font-weight: bold;
 }
 
 .grid-item {
@@ -85,7 +86,7 @@ nav {
 
 .item1 {
     display: flex;
-    justify-content: start;
+    text-align: left;
 }
 
 .tittle {
@@ -101,7 +102,9 @@ nav {
     grid-column-start: 2;
     background-color: #dbf227;
     color: black;
+    font-weight: bold;
 }
+
 
 .bar{
     position: relative;
@@ -109,6 +112,7 @@ nav {
     width: 80%;
     height: 1px;
     border-radius: 10px;
+    margin-top: 9vh;
 }
 
 
@@ -121,29 +125,6 @@ nav {
     border-radius: 20px;
     height: 12px;
     width: 26px;
-}
-
-.barOne{
-    top: 5vh;
-}
-
-.barTwo {
-    top: 15vh;
-}
-.barThree {
-    top: 25vh;
-}
-.barFour {
-    top: 35vh;
-}
-.barFive {
-    top: 45vh;
-}
-.barSix {
-    top: 55vh;
-}
-.barSeven {
-    top: 65vh;
 }
 
 .tittleBar {
@@ -168,6 +149,18 @@ nav {
     margin-left: 5vw;
     border: solid 2vh #dbf227;
     border-radius: 2vh;
+    color: black;
+}
+
+@media (max-width: 80vw){
+    /* display: grid;       
+    padding: 1vh;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 30vh 50vh;
+    gap: 1vh;
+    color: white; */
+
+    
 }
 
 
