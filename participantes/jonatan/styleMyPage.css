@@ -1,0 +1,177 @@
+/*CSS reset starts*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*CSS reset end*/
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #084167;
+  }
+  
+  /* Header and NavBar*/
+  header {
+    height: 10vh;
+    width: 100vw;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: #042940;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    margin-right: 3vw;
+  }
+  
+  .navOption {
+    margin-left: 3vw;
+    color: white;
+  }
+  
+  .logoClean {
+    margin: 1vh 1vh;
+  }
+
+  .gridContainer{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 'me status' 'bio status';
+    gap: 10px;
+  }
+
+  .textAboutMe{
+    color: white;
+    width: 15vw;
+  }
+
+  .aboutMe{
+    background-color: #310962;
+    width: 49vw;
+  }
+
+ .me>div{
+    margin: 1vh 1vw;
+ }
+
+ .me>div>h2{
+    margin-bottom: 3vh;
+ }
+
+ .listDetail{
+    margin-top: 7vh;
+ }
+
+  .me{
+    grid-area: me;
+    display: flex;
+  }
+
+  .bio{
+    grid-area: bio;
+  }
+
+  .status{
+    grid-area: status;
+    padding: 10px;
+  }
+
+  .bio>h2, .bio>p{
+    color: white;
+    margin: 1vh 1vw;
+  }
+
+  .edit{
+    margin-left: 10vw;
+  }
+
+  .btn{
+    background-color: #b7c406;
+    border-radius: 7px;
+    color: white;
+    width: 100px;
+  }
+
+  .edit{
+    margin: 2vh 1vw;
+    float: right;
+}
+
+  .common{
+    margin: 2vh 1vw;
+  }
+
+  .bar{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 10vh 2vw;
+  }
+
+  .marker{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: #b7c406;
+    border-radius: 20px;
+    height: 12px;
+    width: 26px;
+  }
+
+  .status>div{
+    width: 40vw;
+  }
+  .status>div>span{
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  .status>h2{
+    color: white;
+    font-size: large;
+  }
+
+  .leftBar{
+    color: white;
+    float: left;
+  }
+
+  .rightBar{
+    color: white;
+    float: right;
+  }
