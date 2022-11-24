@@ -3,23 +3,131 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
     <title>Ruan</title>
 </head>
 
 <body>
-    <header>
-        <img class="logoClean" src="../../images/logoClean.png" width="70" alt="Logo Flit">
-        <nav>
-            <a class="navOption" href="../../index.html">Home</a>
-            <a class="navOption" href="../../participantes/david/david.html">Participantes</a>
-            <a class="navOption" href="../../sobreNos.html">Sobre nós</a>
-        </nav>
-    </header>
-    <section class="content">
+    <div class="container">
 
-    </section>
+
+        <header>
+            <img class="logoClean" src="../../images/logoClean.png" width="70" alt="Logo Flit">
+            <nav>
+                <a class="navOption" href="../../index.html">Home</a>
+                <a class="navOption" href="../../participantes/david/david.html">Participantes</a>
+                <a class="navOption" href="../../sobreNos.html">Sobre nós</a>
+            </nav>
+        </header>
+        <section class="content">
+            <article class="general" style="grid-area: general;">
+                <div class="img">
+                    <img class="photo" src="../../images/ruan.jpg" alt="foto ruan">
+                </div>
+                <div class="info">
+                    <h1 class="name">Ruan</h1>
+                    <span>"@ruandqm"</span>
+
+                    <ul class="details">
+                        <li>17 anos</li>
+                        <li>Desenvolvedor Web Front-End</li>
+                        <li>Aratuba, CE</li>
+                    </ul>
+                </div>
+                <div class="divisor"></div>
+            </article>
+            <article class="description" style="grid-area: description;">
+                <h2>Ruan</h2>
+                <p id="descriptionText"></p>
+                <div class="buttons">
+                    <div class="controls">
+                        <a href="../marcos/marcos.html"><button class="button">Anterior</button></a>
+                        <a href="../david/david.html"> <button class="button">Próximo</button></a>
+                    </div>
+                    <button class="button" id="edit">Editar</button>
+                </div>
+                <div class="divisor sm"></div>
+            </article>
+
+            <article class="personality" style="grid-area: personality;">
+                <h2>Personalidade</h2>
+                <div class="item">
+                    <div class="label"><span>Introvertido</span>
+                        <span>Extrovertido</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m1"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>Analítico</span>
+                        <span>Criativo</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m2"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>JS</span>
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m3"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>Bagunçado</span>
+                        <span>Organizado</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m4"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>Individual</span>
+                        <span>Trabalho em Equipe</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m5"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>Soft Skills</span>
+                        <span>Hard Skills</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m6"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label"><span>Conservador</span>
+                        <span>Tomador de Risco</span>
+                    </div>
+                    <div class="progress">
+                        <div class="marker" id="m7"></div>
+                        <div class="bar">
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
