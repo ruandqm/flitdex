@@ -1,0 +1,100 @@
+/*CSS reset starts*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #042940;
+}
+
+/* Header and NavBar*/
+header {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: #042940;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 3vw;
+}
+
+.navOption {
+    text-decoration: none;
+    margin-left: 3vw;
+    color: white;
+}
+
+.logoClean {
+    margin: 1vh 1vh;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card {
+    background-color: #fff;
+    width: 30vw;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.card>h1 {
+    margin-bottom: 1em;
+}
+
+.posts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.post {
+    margin-right: 1em;
+    padding: 0.8em;
+}
+
+.s1 {
+    background-color: #ffafa3;
+}
+
+.s2 {
+    background-color: #85e0a3;
+}
+
+.s3 {
+    background-color: #80caff;
+}
+
+.s4 {
+    background-color: #ffc470;
+}
+
+.s5 {
+    background-color: #d9b8ff
+}
+
+.s6 {
+    background-color: #ffd966;
+}
