@@ -18,3 +18,10 @@ barProgressMarkerSix.setAttribute('style', 'left: 50%')
 
 const barProgressMarkerSeven = document.querySelector('.markerSeven')
 barProgressMarkerSeven.setAttribute('style', 'left: 55%')
+
+salvarLocalStorage();
+
+function salvarLocalStorage (){
+    localStorage.setItem('marcos', '.h4');
+
+}
