@@ -1,37 +1,10 @@
 /*CSS reset inicio*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;
+}
+
 html {
-  box-sizing: border-box;
   font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 img {
@@ -47,8 +20,7 @@ body {
 }
 
 header {
-  height: 10vh;
-  width: 100vw;
+ 
   padding: 0.5em 1.5em 0.5em 1.5em;
   background-color: #042940;
   display: flex;
@@ -87,4 +59,36 @@ nav {
   color: #fff;
   margin: 0 auto;
   text-align: center;
+}
+
+.sobreMim {
+  background-color: #084167;
+  display: grid;
+  grid-template: "box1 box3" 1fr
+  "box2 box3" 1.5fr / 1fr 1fr;
+  gap: 1em;
+  height: 100vh;
+  padding: 1em;
+
+}
+
+.box1 {
+  background-color: red;
+  display: flex;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box3 {
+  background-color: red;
+
+}
+.lista{
+  margin-left: 2em;
+}
+.foto{
+  margin-right: 1em;
+  margin: 2em ;
 }
