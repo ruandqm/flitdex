@@ -75,6 +75,7 @@ nav {
     grid-template-rows: 30vh 50vh;
     gap: 1vh;
     color: white;
+    font-weight: bold;
 }
 
 .grid-item {
@@ -101,6 +102,7 @@ nav {
     grid-column-start: 2;
     background-color: #dbf227;
     color: black;
+    font-weight: bold;
 }
 
 
@@ -147,6 +149,7 @@ nav {
     margin-left: 5vw;
     border: solid 2vh #dbf227;
     border-radius: 2vh;
+    color: black;
 }
 
 @media (max-width: 80vw){
@@ -157,7 +160,7 @@ nav {
     gap: 1vh;
     color: white; */
 
-    display: grid;
+    
 }
 
 
