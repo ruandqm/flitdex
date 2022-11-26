@@ -19,9 +19,25 @@ barProgressMarkerSix.setAttribute('style', 'left: 50%')
 const barProgressMarkerSeven = document.querySelector('.markerSeven')
 barProgressMarkerSeven.setAttribute('style', 'left: 55%')
 
-salvarLocalStorage();
+const editar = document.querySelector("#edit");
 
-function salvarLocalStorage (){
-    localStorage.setItem('marcos', '.h4');
+editar.addEventListener("click", function() {   
 
+    const newText = document.createTextNode(prompt("Atualize a descrição!"))
+    alterarTexto(newText);
+    console.log('função 1')
+});
+
+function alterarTexto (parametroText){
+    console.log('entrou na 2')
+    const texto = document.querySelector("#text")
+    const descricion = document.querySelector("#bio")
+    const h4 = document.querySelector("#bio h4")
+
+    descricion.removeChild(h4)
+
+    texto.appendChild(parametroText);
+
+    
 }
+
