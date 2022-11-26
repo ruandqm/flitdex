@@ -8,36 +8,28 @@ style.css
 }
 
 
-
 /*CSS reset starts*/
-.css html {
-  font-size: 16px;
+html {
+  font-size: 14px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /*CSS reset end*/
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #084167;
+  margin: 0;
+
 }
 
 /* Header and NavBar*/
 header {
-
   padding: 0.5em 1.5em 0.5em 1.5em;
   background-color: #042940;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav {
-  margin-right: 3vw;
 }
 
 .navOption {
@@ -55,7 +47,6 @@ nav {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
 .arrow>span {
@@ -88,9 +79,7 @@ nav {
   grid-template: "box1 box3" 1fr
     "box2 box3" 1.5fr / 1fr 1fr;
   gap: 1em;
-  height: 100vh;
   padding: 1em;
-
 }
 
 .box1 {
@@ -109,7 +98,6 @@ nav {
   background-color: #084167;
   border: 0.2vh solid red;
   padding: 2vw;
-
 }
 
 .lista {
@@ -128,6 +116,7 @@ nav {
   height: 1px;
   border-radius: 10px;
   margin-top: 5em;
+  margin-bottom: 2em;
 }
 
 .marker {
@@ -146,4 +135,15 @@ nav {
 .linha2 {
   margin-left: 23vw;
 
+}
+
+@media screen and (max-width: 800px) {
+  .sobreMim {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box1 {
+    flex-direction: column;
+  }
 }
