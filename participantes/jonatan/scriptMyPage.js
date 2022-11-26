@@ -10,6 +10,7 @@ const marker7 = document.getElementById("marker7");
 
 function editBio() {
     window.localStorage.setItem(myBio.id, window.prompt('Digite sua bio.'));
+    loadMyBioLS();
 }
 
 function loadMyBioLS(){

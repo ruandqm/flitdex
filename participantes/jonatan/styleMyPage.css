@@ -29,11 +29,6 @@ html {
     font-weight: normal;
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
   /*CSS reset end*/
   
   body {
@@ -66,10 +61,10 @@ html {
   }
 
   .gridContainer{
-    padding: 10px;
     display: grid;
     grid-template-areas: 'me status' 'bio status';
     gap: 10px;
+    justify-content: center;
   }
 
   .textAboutMe{
@@ -79,7 +74,8 @@ html {
 
   .aboutMe{
     background-color: #310962;
-    width: 49vw;
+    padding: 10px;
+    margin-top: 3vh;
   }
 
  .me>div{
@@ -92,6 +88,7 @@ html {
 
  .listDetail{
     margin-top: 7vh;
+    margin-left: 1vw;
  }
 
   .me{
@@ -105,16 +102,11 @@ html {
 
   .status{
     grid-area: status;
-    padding: 10px;
   }
 
   .bio>h2, .bio>p{
     color: white;
     margin: 1vh 1vw;
-  }
-
-  .edit{
-    margin-left: 10vw;
   }
 
   .btn{
@@ -136,10 +128,10 @@ html {
   .bar{
     position: relative;
     background-color: white;
-    width: 200px;
+    width: 30vw;
     height: 3px;
     border-radius: 10px;
-    margin: 10vh 2vw;
+    margin: 7vh 2vw;
   }
 
   .marker{
@@ -153,9 +145,6 @@ html {
     width: 26px;
   }
 
-  .status>div{
-    width: 40vw;
-  }
   .status>div>span{
     font-size: small;
     margin-top: 10px;
@@ -174,4 +163,26 @@ html {
   .rightBar{
     color: white;
     float: right;
+  }
+
+  @media (width < 800px){
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .aboutMe{
+        margin: 2vh 2vw;
+    }
+
+    .bar{
+        width: 70vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .listDetail{
+        margin-left: 3vw;
+    }
   }
